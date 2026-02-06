@@ -4,30 +4,108 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>🥊 Achievement Unlocked - Boxing Timer</title>
-
-  <!-- Facebook Open Graph tags (this makes the preview work) -->
- <meta property="og:title" content="🥊 Iron Lungs Unlocked in Boxing Timer!" />
-<meta property="og:description" content="Unlocked 'Incredible Endurance'! Track your boxing training, build streaks, and level up. Download now on Google Play." />
-  <meta property="og:image" content="https://i.imgur.com/09PHtf1.png" />  <!-- Replace with a real public image link, e.g. from Imgur upload -->
+  <!-- Facebook Open Graph tags -->
+  <meta property="og:title" content="🥊 Iron Lungs Unlocked in Boxing Timer!" />
+  <meta property="og:description" content="Unlocked 'Iron Lungs'! Track your boxing training, build streaks, and level up. Download now on Google Play." />
+  <meta property="og:image" content="https://i.imgur.com/09PHtf1.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:url" content="https://jinxedjackal.github.io/boxing-timer-share/iron-lungs.html" />  <!-- Update after you get your real URL -->
+  <meta property="og:url" content="https://jinxedjackal.github.io/boxing-timer-share/iron-lungs.html" />
   <meta property="og:type" content="website" />
-
-  <!-- Disabled to fix Facebook debugger 404 - re-enable after publish if wanted -->
-<!-- <meta http-equiv="refresh" content="5;url=https://play.google.com/store/apps/details?id=com.yourapp.boxingtimer" /> -->
-
+  <!-- <meta http-equiv="refresh" content="5;url=https://play.google.com/store/apps/details?id=com.yourapp.boxingtimer" /> -->
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 40px; background: #111; color: #fff; }
-    h1 { color: #ff4444; }
-    a { color: #4CAF50; font-size: 1.3em; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .container {
+      max-width: 600px;
+      width: 100%;
+    }
+    
+    h1 {
+      color: #ff4444;
+      font-size: 2.5em;
+      font-weight: 700;
+      margin-bottom: 30px;
+      line-height: 1.2;
+      text-shadow: 0 2px 10px rgba(255, 68, 68, 0.3);
+    }
+    
+    .description {
+      font-size: 1.2em;
+      color: #e0e0e0;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    
+    .cta {
+      font-size: 1.1em;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+    
+    .download-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+      color: white;
+      text-decoration: none;
+      padding: 16px 40px;
+      font-size: 1.1em;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+      margin-bottom: 25px;
+    }
+    
+    .download-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(76, 175, 80, 0.6);
+    }
+    
+    .redirect-note {
+      font-size: 0.9em;
+      color: #888;
+      margin-top: 15px;
+      font-style: italic;
+    }
+    
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      .description {
+        font-size: 1.1em;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Iron Lungs Achievement 🥊</h1>
-<p>Complete 10+ rounds of 3 minutes or more to unlock this badge!</p>
-<p><strong>Download Boxing Timer and start your journey!</strong></p>
-<a href="https://play.google.com/store/apps/details?id=com.yourapp.boxingtimer">→ Get Boxing Timer on Google Play ←</a>
-  <p>(Redirecting in a few seconds...)</p>
+  <div class="container">
+    <h1>Iron Lungs Achievement 🥊</h1>
+    <p class="description">Complete 10+ rounds of 3 minutes or more to unlock this badge!</p>
+    <p class="cta">Download Boxing Timer and start your journey!</p>
+    <a href="https://play.google.com/store/apps/details?id=com.yourapp.boxingtimer" class="download-btn">
+      Get Boxing Timer on Google Play
+    </a>
+    <p class="redirect-note">Redirecting in a few seconds...</p>
+  </div>
 </body>
 </html>
